@@ -16,4 +16,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install random2 # If you use the 'random' module, install 'random2' or any other dependencies here
       - name: Run the script
-        run: python main.py
+        run: python NCF_Draw_official_program.py
