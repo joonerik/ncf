@@ -1,6 +1,7 @@
 import random
 
-players = ["Bjørn", "Joon", "Pille", "Sigurd", "Harvey", "Preben", "Scott", "Klokk"]
+with open("players.txt", "r", encoding="utf-8") as file:
+    players = [line.strip() for line in file.readlines()]
 black_team = []
 color_team = []
 turn = "black"
@@ -25,7 +26,7 @@ print_team(black_team)
 print()
 print("COLOR TEAM")
 print_team(color_team)
-input("Press enter to draw the next player...")
+# input("Press enter to draw the next player...")
 print()
 print()
 
@@ -46,7 +47,7 @@ while len(players) > 0:
     print()
     print("COLOR TEAM")
     print_team(color_team)
-    input("Press enter to draw the next player...")
+    # input("Press enter to draw the next player...")
     print()
     print()
 
